@@ -1,0 +1,81 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 960M (ID=0x139b)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   10.18.13.6871
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.058 seconds
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Jaror\Documents\UnityProjects\anxiety-master\Builds\AnxietyV0.0.5_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.913977 ms
+Loading level
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.801979 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 0.262321 ms (FindLiveObjects: 0.050963 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.193185 ms  DeleteObjects: 0.003950 ms)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+4
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Deadzoned
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.999111 ms
+
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 262.
+Total: 1.035852 ms (FindLiveObjects: 0.043456 ms CreateObjectMapping: 0.051753 ms MarkObjects: 0.461037 ms  DeleteObjects: 0.478025 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1388 -> priority: 1 
+  Thread -> id: 3d4c -> priority: 1 

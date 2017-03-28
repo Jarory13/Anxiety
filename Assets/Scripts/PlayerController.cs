@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour {
 	public float movespeed;
 	public float upforce;
 	private Rigidbody2D rb;
-
-	private bool canJump = false;
+    private int jumpCount = 0;
+	private bool canJump = true;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (canJump && (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow))) {
+		if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) {
 			moveUp ();
 		} else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
 			moveLeft ();
@@ -36,7 +36,11 @@ public class PlayerController : MonoBehaviour {
 
 
 	public void moveUp(){
-		rb.AddForce(new Vector3(0, upforce, 0));
+        if (jumpCount < 5)
+        {
+            rb.AddForce(new Vector3(0, upforce, 0));
+            jumpCount++;
+        }
 	}
 	public void moveRight(){
 		rb.AddForce(new Vector3(movespeed, 0, 0));
@@ -44,12 +48,8 @@ public class PlayerController : MonoBehaviour {
 	public void moveLeft(){
 		rb.AddForce(new Vector3(-movespeed, 0, 0));
 	}
+
 	public void createShield(){
-//		Destroy(Instantiate(shield, 
-//			new Vector3(transform.position.x, transform.position.y+2, 0),
-//			Quaternion.Euler(-90, 30, 0))
-//		as Transform;
-//		(newShield.gameObject, 5);
 
 		var newOne = Instantiate (shield, 
 			             new Vector3 (transform.position.x, transform.position.y + 2, 0),
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		
 		if (other.gameObject.tag == "Platform") {
-			canJump = true;
+            jumpCount = 0;
 		}
 
 	}
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour {
 	void OnCollisionExit2D (Collision2D other) 
 	{
 		if (other.gameObject.tag == "Platform") {
-			canJump = false;
+            
 		}
 	}
 }

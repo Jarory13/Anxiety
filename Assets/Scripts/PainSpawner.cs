@@ -9,6 +9,7 @@ public class PainSpawner : MonoBehaviour {
 	private BoxCollider2D box;
 	public float force;
 	private Rigidbody2D rb;
+    public float gravity = 0.6f;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +23,7 @@ public class PainSpawner : MonoBehaviour {
 	}
 
 	public void StartSpawningPaint() {
-		InvokeRepeating("SpawnPaint", 1.0f, SpawnTime);
+		InvokeRepeating("SpawnPaint", 2.0f, SpawnTime);
 	}
 
 	public void StopSpawningPaint()
@@ -41,5 +42,8 @@ public class PainSpawner : MonoBehaviour {
 
 		rb = newArrow.GetComponent<Rigidbody2D> ();
 		rb.AddForce(new Vector3(Random.Range(-force, force), -force, 0));
+        SpawnTime -= 0.02f;
+        gravity += 0.1f;
+        rb.gravityScale = gravity;
 	}
 }
