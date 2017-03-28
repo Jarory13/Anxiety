@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour {
 		if (col.gameObject.tag == "DeadZone") {
 			Debug.Log ("Deadzoned");
 			paintSpawner.GetComponent<PainSpawner> ().StopSpawningPaint ();
+            ScoreManager.instance.StopScore();
             SceneManager.LoadScene("GameOver");
 		}
 

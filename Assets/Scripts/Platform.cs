@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour {
 
-	private int health = 6;
+	private int health = 5;
 	//Use the fadder to track how much the alpha channel should descrease on hit
 	private float fadder = 0.2f;
 	private Renderer rend;

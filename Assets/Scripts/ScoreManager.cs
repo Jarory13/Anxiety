@@ -8,9 +8,11 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance;
     public Text text;
     public int score = 0;
+    public int highScore;
 
     void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         if (instance == null)
         {
             instance = this;
@@ -48,6 +50,7 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", score);
         }
 
+        highScore = PlayerPrefs.GetInt("HighScore");
 
     }
 }

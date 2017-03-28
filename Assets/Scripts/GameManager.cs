@@ -24,10 +24,18 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
       
     }
 
     public void LoadLevel(string level) {
+        Debug.Log("Loading level");
         SceneManager.LoadScene(level);
+    }
+
+    public void quitGame() {
+        Application.Quit();
     }
 }
