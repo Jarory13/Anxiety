@@ -7,16 +7,23 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public Text text;
+   // private Text gameOverText;
     public int score = 0;
-    public int highScore;
+    public static int highScore;
 
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+       // DontDestroyOnLoad(this.gameObject);
         if (instance == null)
         {
             instance = this;
         }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+
+        //gameOverText= GameObject.FindWithTag("GameOverScore").GetComponent<Text>();
     }
 
 
@@ -51,6 +58,5 @@ public class ScoreManager : MonoBehaviour
         }
 
         highScore = PlayerPrefs.GetInt("HighScore");
-
     }
 }
