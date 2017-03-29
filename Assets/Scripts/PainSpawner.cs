@@ -33,7 +33,7 @@ public class PainSpawner : MonoBehaviour {
 
 	void SpawnPaint() {
 		float range = box.size.x / 2;
-		range = 20;
+		range = this.GetComponent<BoxCollider2D>().bounds.size.x/2;
 		GameObject arrow = arrows [Random.Range (0, 3)];
 	
 		GameObject newArrow = Instantiate(arrow, 

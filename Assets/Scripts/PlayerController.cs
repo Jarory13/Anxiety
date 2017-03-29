@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour {
 
 
 	public void moveUp(){
-        if (jumpCount < 5)
+        if (jumpCount < 4)
         {
             rb.AddForce(new Vector3(0, upforce, 0));
             jumpCount++;
@@ -60,13 +60,12 @@ public class PlayerController : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D col) {
-		if (col.gameObject.tag == "DeadZone") {
-			Debug.Log ("Deadzoned");
-			paintSpawner.GetComponent<PainSpawner> ().StopSpawningPaint ();
+        if (col.gameObject.tag == "DeadZone")
+        {
+            paintSpawner.GetComponent<PainSpawner>().StopSpawningPaint();
             ScoreManager.instance.StopScore();
             SceneManager.LoadScene("GameOver");
-		}
-
+        }
 	}
 
 	void OnCollisionEnter2D (Collision2D other) 
