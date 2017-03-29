@@ -31,7 +31,9 @@ public class PlayerController : MonoBehaviour {
 			moveRight ();
 		} else if (Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow)) {
 			createShield ();
-		}
+		} else if (Input.GetKeyDown(KeyCode.Escape)) {
+            Application.Quit();
+        }
 	}
 
 

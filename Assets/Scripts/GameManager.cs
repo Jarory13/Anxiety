@@ -12,13 +12,6 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//DontDestroyOnLoad(this.gameObject);
-		//if (instance == null)
-		//{
-		//	instance = this;
-		//} else {
-		//	Destroy(this.gameObject);
-		//}
 		
 	}
 	
